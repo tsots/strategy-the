@@ -1,0 +1,55 @@
+.navigation{
+  background-color: $navcolor;
+}
+
+.top-bar .top-bar-title a {
+  padding-left: .2rem;
+}
+
+.page-template-page-sidebar-right .content.inner{
+  padding-top: 3rem;
+}
+
+.top-header .logo a{
+      padding: 0.7rem 0rem;
+      line-height: 1;
+      display: block;
+}
+
+.page_home .silo:nth-of-type(2n+1),
+.page_home .silo:nth-of-type(2n+2){
+    min-height: 50vh;
+}
+
+.page_home .silo:nth-of-type(2n+1) .entry-content,
+.page_home .silo:nth-of-type(2n+2) .entry-content{
+  padding: 0 2.5rem;
+  color: #efefef;
+}
+
+.page_home .silo:nth-of-type(2n+1) .entry-title,
+.page_home .silo:nth-of-type(2n+2) .entry-title{
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #f9f9f9;
+}
+
+.page_home .silo:nth-of-type(2n+1){
+  background-color: $identity;
+}
+.page_home .silo:nth-of-type(2n+2){
+  background-color: $digital;
+}
+
+span.entry-title{
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+}
+
+section.identity-children,
+section.digital-children{
+  margin-top: 1.5rem;
+}

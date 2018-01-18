@@ -24,6 +24,26 @@
 
 
 	<header class="site-header" role="banner">
+
+		<div class="grid-container top-header">
+			<div class="grid-x align-center outer">
+				<div class="cell large-10">
+					<div class="grid-x inner">
+							<div class="cell large-10 logo text-center">
+								<?php   if(has_custom_logo()) {
+										the_custom_logo();
+									} else { ?>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							<?php } ?>
+							</div>
+							<div class="cell large-2 social-nav text-right">
+								<?php foundationPress_social_nav(); ?>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 			<div class="title-bar-left">
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
@@ -32,20 +52,27 @@
 				</span>
 			</div>
 		</div>
+	</header>
 
-		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+	<div class="navigation">
+		<div class="grid-container">
+			<div class="grid-x align-center outer grid-margin-x grid-padding-x">
+				<div class="cell large-10">
+					<nav class="site-navigation top-bar" role="navigation">
+						<div class="top-bar-left">
+							<div class="site-desktop-title top-bar-title">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							</div>
+						</div>
+						<div class="top-bar-right">
+							<?php foundationpress_top_bar_r(); ?>
+
+							<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+								<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+							<?php endif; ?>
+						</div>
+					</nav>
 				</div>
 			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
-
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
-
-	</header>
+		</div>
+	</div>
