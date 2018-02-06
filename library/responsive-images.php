@@ -16,6 +16,11 @@ add_image_size( 'featured-medium', 1280, 400, true );
 add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
 
+add_image_size( 'katalist-small', 640, 200, true ); // name, width, height, crop
+add_image_size( 'katalist-medium', 640, 400, true );
+add_image_size( 'katalist-large', 1440, 400, true );
+add_image_size( 'katalist-xlarge', 1920, 400, true );
+
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );
 add_image_size( 'fp-medium', 1024 );

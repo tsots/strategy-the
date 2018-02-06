@@ -1,55 +1,159 @@
-.navigation{
-  background-color: $navcolor;
+.navigation{  background-color: $navcolor;}
+.top-bar .top-bar-title a {  padding-left: .2rem;}
+.page-template-page-sidebar-right .content.inner{  padding-top: 3rem;}
+.top-header .logo a{ padding: 0.7rem 0rem; line-height: 1; display: block;}
+section#identity .inner,section#digital .inner,section#graphic .inner{ padding-top: 3rem;}
+//section#masthead{ border-bottom: 1rem solid rgba(154,154,154,.4);}
+
+.page_home{
+  section#masthead{
+    background: rgba(245,246,255,.7) url("../images/site-hero-bg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    z-index: 0;
+    .tagline{
+      text-align: center;
+      position: absolute;
+      bottom: 3rem;
+      h1{
+        color: #e60d2d;
+      }
+      p{}
+    }
+  }
+}
+  section.services{
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -5rem;
+      .silo{
+        .entry-title{
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 2.2rem;
+        }
+        .entry-image{
+          text-align: center;
+          padding: 1rem 0;
+        }
+        .entry-content{
+          text-align: center;
+          padding: 0.9375rem * 2;
+          //margin: 0.9375rem;
+        }
+      }
+      .silo:nth-of-type(3n+1){
+          background-color: #f7f7f7;
+        }
+      .silo:nth-of-type(3n+2){
+          background-color: #e9e9e9;
+        }
+      .silo:nth-of-type(3n+3){
+          background-color: #dadada;
+        }
+    }
+
+// Start of IDENTITY PAGE assets
+
+.page_identity{
+  section#masthead{
+    background: rgba(245,246,255,.7) url("../images/site-hero-bg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    z-index: 0;
+    .tagline{
+      left: 5%;
+      text-align: center;
+      position: absolute;
+      bottom: 3rem;
+      h1{
+        color: #e60d2d;
+      }
+      p{}
+    }
+    .image{
+      img{
+        width: 80%;
+      }
+      position: absolute;
+      right:10%;
+      @include vertical-center;
+    }
+  }
 }
 
-.top-bar .top-bar-title a {
-  padding-left: .2rem;
+
+// Start of IDENTITY PAGE assets
+
+.page_digital{
+  section#masthead{
+    background: rgba(245,246,255,.7) url("../images/site-hero-bg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    z-index: 0;
+    .tagline{
+      left: 5%;
+      text-align: center;
+      position: absolute;
+      bottom: 3rem;
+      h1{
+        color: #e60d2d;
+      }
+      p{}
+    }
+    .image{
+      img{
+        width: 80%;
+      }
+      position: absolute;
+      right:10%;
+      @include vertical-center;
+    }
+  }
 }
 
-.page-template-page-sidebar-right .content.inner{
-  padding-top: 3rem;
-}
+// Start of IDENTITY PAGE assets
 
-.top-header .logo a{
-      padding: 0.7rem 0rem;
-      line-height: 1;
-      display: block;
-}
-
-.page_home .silo:nth-of-type(2n+1),
-.page_home .silo:nth-of-type(2n+2){
-    min-height: 50vh;
-}
-
-.page_home .silo:nth-of-type(2n+1) .entry-content,
-.page_home .silo:nth-of-type(2n+2) .entry-content{
-  padding: 0 2.5rem;
-  color: #efefef;
-}
-
-.page_home .silo:nth-of-type(2n+1) .entry-title,
-.page_home .silo:nth-of-type(2n+2) .entry-title{
-  text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  color: #f9f9f9;
-}
-
-.page_home .silo:nth-of-type(2n+1){
-  background-color: $identity;
-}
-.page_home .silo:nth-of-type(2n+2){
-  background-color: $digital;
-}
-
-span.entry-title{
-  padding: 1.5rem 0;
-  font-size: 2rem;
-  font-weight: 400;
-  display: block;
-}
-
-section.identity-children,
-section.digital-children{
-  margin-top: 1.5rem;
+.page_graphic{
+  section#masthead{
+    background: rgba(245,246,255,.7) url("../images/site-hero-bg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    z-index: 0;
+    .section-overlay{
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255,255,255,.7);
+    }
+    .tagline{
+      left: 5%;
+      text-align: center;
+      position: absolute;
+      bottom: 3rem;
+      h1{
+        color: #e60d2d;
+      }
+      p{}
+    }
+    .image{
+      img{
+        width: 80%;
+      }
+      position: absolute;
+      right:10%;
+      @include vertical-center;
+    }
+  }
 }
